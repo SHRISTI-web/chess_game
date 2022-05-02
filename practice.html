@@ -4,6 +4,47 @@
     <meta charset="UTF-8">
     
     <title>Javascript chess game</title>
+    <style type="text/css">
+        html,
+        body{
+            width:100%;
+            height:100%;
+            padding:0;
+            margin:0;
+            font-family:sans-serif;
+        }
+        div *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        #turn{
+            max-width:451px;
+            max-height:30px;
+            width:100%;
+            height:100%;
+            position:relative;
+            float:left;
+            border-right:5px;
+            border:1px solid rgba(0,0,0);
+            border-style:inset;
+            text-align:center;
+            background:#fff;
+            transition:  .85s linear;
+        }
+.turnheightlight{
+background: #5cb85c !important;
+color: #fff;
+}
+#game{
+    max-height:504px;
+    max-width:504px;
+    width:100%;
+    height:100%;
+    position:relative;
+    margin:20px auto;
+}
+    </style>
 </head>
 <body>
     <div id="game">
